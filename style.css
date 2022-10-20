@@ -1,0 +1,37 @@
+body {
+    background-color: dodgerblue;
+}
+
+.h1 {
+    font-family: 'Fredoka One';
+    color: #FAB201;
+    -webkit-text-stroke: 2px white;
+    font-size: 70px;
+    text-align: center;
+}
+
+.box-container {
+    margin: 100px auto 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    border-radius: 13px;
+    margin: 7px;
+    background-color: white;
+}
+
+p {
+    font-family: 'Fredoka One';
+    color: white;
+    text-align: center;
+}
