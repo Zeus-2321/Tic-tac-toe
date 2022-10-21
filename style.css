@@ -1,37 +1,88 @@
-body {
-    background-color: dodgerblue;
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0
+        /* box-sizing: border-box; */
 }
 
-.h1 {
-    font-family: 'Fredoka One';
-    color: #FAB201;
-    -webkit-text-stroke: 2px white;
-    font-size: 70px;
+body {
+    font-family: Fredoka One;
+    background-color: dodgerblue;
+    color: white;
+    padding: 50px;
     text-align: center;
 }
 
-.box-container {
-    margin: 100px auto 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#heading {
+    color: #fab201;
+    font-size: 50px;
+    -webkit-text-stroke: 5px white;
 }
 
-.box-row {
-    display: flex;
-    flex-direction: row;
+.container {
+    display: grid;
+    grid-template-columns: 0fr 0fr 0fr;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    gap: 10px;
 }
 
 .box {
     height: 100px;
     width: 100px;
-    border-radius: 13px;
-    margin: 7px;
     background-color: white;
+    border-radius: 10px;
+    color: #fab201;
+    font-size: 78px;
+    cursor: pointer;
 }
 
-p {
-    font-family: 'Fredoka One';
+.box:hover {
+    background-color: rgb(226, 226, 226)
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000ee;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#result {
+    font-size: 42px;
+    letter-spacing: 3px;
+    margin: 15px 0;
+}
+
+.active {
+    display: flex;
+}
+
+#player {
+    color: #01d5fa;
+}
+
+#reset-game {
+    padding: 10px;
+    background-color: #66c91b;
+    border-radius: 10px;
+    margin: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: inherit;
     color: white;
-    text-align: center;
+}
+
+#reset-game:hover {
+    transform: scale(1.1);
+    transition: 0.1s;
+    background-color: #509719;
 }
